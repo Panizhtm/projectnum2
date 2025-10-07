@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@font-face {
+  font-family: vaziri;
+  src: url(../fonts/Vazir.eot), url(../fonts/Vazir.ttf),
+    url(../fonts/Vazir.woff), url(../fonts/Vazir.woff2);
+}
+
+@theme {
+  --spacing-height-article: 800px;
+  --spacing-width-menu: 80%;
+  --spacing-height-menu: 100px;
+  --color-bg-menu: #ffffff;
+  --radius-bottom-menu: 16px;
+  --font-vaziri: vaziri;
+  --spacing-width-lowermenu: 80%;
+  --spacing-height-lowermenu: 220px;
+  --breakpoint-mobile: 340px;
+  --breakpoint-desktop: 1000px;
+}

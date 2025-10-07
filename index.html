@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Rent - اتو رنت</title>
+    <link rel="stylesheet" href="./src/css/output.css" />
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- #region start-->
+    <div class="wrapper w-full bg-[#f0f0f0]">
+      <!-- #region article-->
+      <div
+        class="desktop:w-full desktop:h-height-article relative desktop:bg-[url(../images/articless/image-1.png)]  bg-cover bg-center"
+      >
+        <div
+          class="w-full desktop:h-height-article relative desktop:bg-[#2b2b2b]/70 mobile:bg-[#f0f0f0] mobile:h-[400px]"
+        >
+          <div
+            class="desktop:w-width-menu desktop:h-height-menu mobile:w-full bg-bg-menu desktop:mx-auto rounded-b-bottom-menu flex items-center justify-between desktop:px-[32px] box-border"
+          >
+            <div class="relative inline-block mr-4 text-left desktop:hidden">
+              <!-- دکمه اصلی -->
+              <button
+                id="menu-button"
+                class="inline-flex justify-center rounded-[10px] border border-gray-300 shadow-sm px-2 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
+                onclick="toggleMenu()"
+              >
+                <img
+                  class="w-[30px] h-[30px]"
+                  src="./src/images/menu/menu-svgrepo-com.svg"
+                  alt=""
+                />
+                <svg
+                  class="-mr-0 ml-0 h-0 w-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox=""
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <!-- منو -->
+              <div
+                id="dropdown-menu"
+                class="origin-top-left absolute right-0 mt-2 w-28 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden"
+              >
+                <div class="py-1">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm !text-gray-800 font-vaziri text-decoration-none hover:bg-gray-100 text-right"
+                    >رزرو خودرو</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm !text-gray-800 font-vaziri text-decoration-none hover:bg-gray-100 text-right"
+                    >خدمات ما</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm !text-gray-800 font-vaziri text-decoration-none hover:bg-gray-100 text-right"
+                    >بلاگ</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm !text-gray-800 font-vaziri text-decoration-none hover:bg-gray-100 text-right"
+                    >درباره ما</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm !text-gray-800 font-vaziri text-decoration-none hover:bg-gray-100 text-right"
+                    >تماس با ما</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <script>
+              function toggleMenu() {
+                document
+                  .getElementById("dropdown-menu")
+                  .classList.toggle("hidden");
+              }
+            </script>
+            <div
+              class="h-[60px] desktop:w-[12%] mobile:w-[120px] desktop:mt-5 mobile:mt-15px mobile:mr-[20px] desktop:mr-0"
+            >
+              <img src="./src/images/menu/Logo.png" alt="" />
+            </div>
+            <div
+              class="desktop:w-[550px] desktop:h-[30px] desktop:flex mobile:hidden"
+            >
+              <nav
+                class="desktop:w-[100%] desktop:h-[100%] desktop:flex desktop:justify-between desktop:gap-x-[40px] desktop:items-center"
+              >
+                <div>
+                  <a
+                    href="./plp.html"
+                    class="font-vaziri text-decoration-none text-black"
+                    >رزرو خودرو</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="font-vaziri text-decoration-none text-black"
+                    >خدمات ما</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="font-vaziri text-decoration-none text-black"
+                    >بلاگ</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="font-vaziri text-decoration-none text-black"
+                    >درباره ما</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="font-vaziri text-decoration-none text-black"
+                    >تماس با ما</a
+                  >
+                </div>
+                <div>
+                  <a href="#"
+                    ><img src="./src/images/menu/search.png" alt=""
+                  /></a>
+                </div>
+              </nav>
+            </div>
+            <div class="w-fit h-fit mobile:ml-3">
+              <a href="#" class="btn btn-primary btn-sm font-vaziri"
+                >ورود / ثبت نام</a
+              >
+            </div>
+          </div>
+          <div
+            class="desktop:w-[40%] text-nowrap mr-10 mt-10 mobile:hidden desktop:flex flex-col"
+          >
+            <p
+              class="font-vaziri text-[44px] font-bold leading-[140%] text-[#FDB713] px-40 text-nowrap"
+            >
+              اُتـــو رِنت؛ سریع،
+            </p>
+            <p
+              class="font-vaziri text-[44px] font-bold leading-[140%] text-[#FDB713] px-40"
+            >
+              آسان و به صرفه
+            </p>
+            <p
+              class="font-vaziri text-[20px] leading-[140%] text-[#F9F9F9] px-40"
+            >
+              سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!
+            </p>
+            <div class="flex">
+              <div
+                class="btn btn-warning w-[130px] h-[40px] mr-40 text-nowrap mt-3"
+              >
+                <a
+                  class="font-vaziri text-decoration-none !text-black font-bold"
+                  href="#"
+                  >رزرو آسان خودرو</a
+                >
+              </div>
+              <div
+                class="btn btn-outline-light w-[130px] h-[40px] mr-5 mt-[15px]"
+              >
+                <a
+                  class="font-vaziri text-decoration-none !text-[#c9c9c9] font-bold"
+                  href="#"
+                  >تماس با ما</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-[85%] bg-white border border-gray-300 rounded-[16px] mobile:mt-3 gap-4 desktop:mt-[270px] mx-auto mobile:h-[320px] desktop:h-[220px]"
+          >
+            <div
+              class="px-[24px] desktop:flex mobile:place-items-center mobile:gap-y-4 mt-4 justify-between"
+            >
+              <div class="desktop:flex desktop:gap-3">
+                <nav
+                  class="desktop:w-[120px] h-[40px] desktop:mt-0 mobile:mt-2 mobile:w-[200px] hover:bg-[#194BF0] transition border border-gray-500 rounded-[20px] flex justify-center items-center"
+                >
+                  <a
+                    href="#"
+                    class="text-decoration-none hover:text-white text-black font-vaziri text-[13px]"
+                    >اجاره خودرو با راننده</a
+                  >
+                </nav>
+                <nav
+                  class="desktop:w-[120px] h-[40px] desktop:mt-0 mobile:mt-2 mobile:w-[200px] hover:bg-[#194BF0] transition border rounded-[20px] flex justify-center items-center"
+                >
+                  <a
+                    href="#"
+                    class="text-decoration-none hover:text-white text-black font-vaziri text-[13px]"
+                    >اجاره خودرو بی راننده</a
+                  >
+                </nav>
+                <nav
+                  class="desktop:w-[120px] h-[40px] desktop:mt-0 mobile:mt-2 mobile:w-[200px] hover:bg-[#194BF0] transition border rounded-[20px] flex justify-center items-center"
+                >
+                  <a
+                    href="#"
+                    class="text-decoration-none hover:text-white text-black font-vaziri text-[13px]"
+                    >اجاره ماشین عروس</a
+                  >
+                </nav>
+              </div>
+              <nav class="desktop:flex desktop:mt-0 mobile:mt-2 ml-3">
+                <a href="#" class="text-decoration-none font-vaziri text-[14px]"
+                  >اطلاعات بیشتر در مورد رزرو خودرو</a
+                >
+              </nav>
+            </div>
+            <div
+              class="px-[25px] desktop:flex gap-3 mt-4 justify-between mobile:hidden"
+            >
+              <nav class="flex gap-1">
+                <img
+                  class="w-[16px] h-[16px]"
+                  src="./src/images/lowermenu/arrow-left.png"
+                  alt=""
+                /><a
+                  href="#"
+                  class="text-decoration-none text-black font-vaziri text-[14px]"
+                  >محل تحویل خودرو</a
+                >
+              </nav>
+              <div class="flex justify-center gap-[40px] ml-[120px]">
+                <nav class="flex gap-1">
+                  <img
+                    class="w-[16px] h-[16px]"
+                    src="./src/images/lowermenu/arrow-left.png"
+                    alt=""
+                  /><a
+                    href="#"
+                    class="text-decoration-none text-black font-vaziri text-[14px]"
+                    >تاریخ تحویل</a
+                  >
+                </nav>
+                <nav class="flex gap-1">
+                  <img
+                    class="w-[16px] h-[16px]"
+                    src="./src/images/lowermenu/arrow-left.png"
+                    alt=""
+                  /><a
+                    href="#"
+                    class="text-decoration-none text-black font-vaziri text-[14px]"
+                    >ساعت تحویل</a
+                  >
+                </nav>
+                <nav class="flex gap-1">
+                  <img
+                    class="w-[16px] h-[16px]"
+                    src="./src/images/lowermenu/arrow-left.png"
+                    alt=""
+                  /><a
+                    href="#"
+                    class="text-decoration-none text-black font-vaziri text-[14px]"
+                    >تاریخ بازگشت</a
+                  >
+                </nav>
+                <nav class="flex gap-1">
+                  <img
+                    class="w-[16px] h-[16px]"
+                    src="./src/images/lowermenu/arrow-left.png"
+                    alt=""
+                  /><a
+                    href="#"
+                    class="text-decoration-none text-black font-vaziri text-[14px]"
+                    >ساعت بازگشت</a
+                  >
+                </nav>
+              </div>
+            </div>
+            <div
+              class="w-[95%] h-[55px] border flex justify-between items-center mx-auto rounded-[16px] my-7"
+            >
+              <div class="flex items-center w-[40%]">
+                <a
+                  href="#"
+                  class="text-decoration-none text-nowrap text-black font-vaziri text-[16px] mr-3"
+                  >تهران-فرودگاه امام خمینی</a
+                >
+              </div>
+              <div
+                class="w-[55%] justify-end mobile:flex mobile:justify-end items-center"
+              >
+                <div class="relative inline-block">
+                  <!-- دکمه -->
+                  <button
+                    id="dropdownBtn"
+                    class="bg-white text-white rounded-lg shadow transition desktop:hidden"
+                  >
+                    <img
+                      class="w-[20px] desktop:flex h-[20px]"
+                      src="./src/images/lowermenu/arrow-down.png"
+                      alt=""
+                    />
+                  </button>
+
+                  <!-- منو -->
+                  <div
+                    id="dropdownMenu"
+                    class="absolute left-0 mt-2 w-45 bg-white border rounded-lg shadow-lg hidden"
+                  >
+                    <ul class="py-2 text-gray-700">
+                      <li>
+                        <a
+                          href="#"
+                          class="block font-vaziri text-decoration-none !text-gray-800 px-4 py-2 hover:bg-gray-100"
+                          >تاریخ تحویل</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block font-vaziri text-decoration-none !text-gray-800 px-4 py-2 hover:bg-gray-100"
+                          >ساعت تحویل</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block font-vaziri text-decoration-none !text-gray-800 px-4 py-2 hover:bg-gray-100"
+                          >تاریخ بازگشت</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block font-vaziri text-decoration-none !text-gray-800 px-4 py-2 hover:bg-gray-100"
+                          >ساعت بازگشت</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <script>
+                  const btn = document.getElementById("dropdownBtn");
+                  const menu = document.getElementById("dropdownMenu");
+
+                  btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                  });
+
+                  // بستن منو وقتی بیرون کلیک بشه
+                  window.addEventListener("click", (e) => {
+                    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+                      menu.classList.add("hidden");
+                    }
+                  });
+                </script>
+                <img
+                  class="w-[20px] desktop:flex h-[20px] mobile:hidden"
+                  src="./src/images/lowermenu/arrow-down.png"
+                  alt=""
+                />
+
+                <nav
+                  class="w-[2px] h-9 desktop:flex bg-gray-300 mr-3 mobile:hidden"
+                ></nav>
+
+                <nav class="desktop:flex items-center mobile:hidden">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-black font-vaziri text-[16px] mr-3"
+                    >1403٫02٫10</a
+                  ><img
+                    src="./src/images/lowermenu/Vector.png"
+                    alt=""
+                    class="w-[17px] h-[17px] mr-5 items-center"
+                  /><span class="w-[0.9px] h-9 bg-gray-300 mr-3"></span>
+                </nav>
+                <nav class="desktop:flex items-center mobile:hidden">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-black font-vaziri text-[16px] mr-3"
+                    >07:00</a
+                  ><img
+                    src="./src/images/lowermenu/clock.png"
+                    alt=""
+                    class="w-[20px] h-[20px] mr-[40px] items-center"
+                  /><span class="w-[0.9px] h-9 bg-gray-300 mr-3"></span>
+                </nav>
+                <nav class="desktop:flex items-center mobile:hidden">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-black font-vaziri text-[16px] mr-2"
+                    >1403٫02٫10</a
+                  ><img
+                    src="./src/images/lowermenu/Vector.png"
+                    alt=""
+                    class="w-[17px] h-[17px] ml-5 items-center"
+                  /><span class="w-[0.9px] h-9 bg-gray-300 mr-2"></span>
+                </nav>
+                <nav class="desktop:flex items-center mobile:hidden">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-black font-vaziri text-[16px] mr-4"
+                    >07:00</a
+                  ><img
+                    src="./src/images/lowermenu/clock.png"
+                    alt=""
+                    class="w-[20px] h-[20px] mr-[30px] items-center"
+                  />
+                </nav>
+                <a href="#"
+                  ><nav
+                    class="flex mr-13 bg-[#FDB713] w-[56px] h-[55px] items-center justify-center rounded-[16px]"
+                  >
+                    <img
+                      class="w-[24px] h-[24px]"
+                      src="./src/images/menu/search.png"
+                      alt=""
+                    /></nav
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion article-->
+      <!-- #region car brands-->
+      <div
+        class="flex items-center desktop:mt-40 desktop:mb-20 justify-around opacity-[35%] mobile:mb-10"
+      >
+        <div class="mobile:hidden desktop:flex desktop:gap-8">
+          <a href="#"
+            ><img
+              class="desktop:flex w-[100px] h-[50px] mobile:hidden"
+              src="./src/images/brands/first.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:flex w-[100px] h-[50px] mobile:hidden"
+              src="./src/images/brands/second.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:flex w-[100px] h-[50px] mobile:hidden"
+              src="./src/images/brands/third.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:flex w-[86px] h-[60px] mobile:hidden"
+              src="./src/images/brands/fourth.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:flex w-[70px] h-[60px] mobile:hidden"
+              src="./src/images/brands/fifth.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:flex w-[93px] h-[70px] mobile:hidden"
+              src="./src/images/brands/ninth.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:flex w-[73px] h-[60px] mobile:hidden"
+              src="./src/images/brands/seventh.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:w-[110px] mt-2 desktop:h-[60px] mobile:w-[150px] mobile:h-[100px]"
+              src="./src/images/brands/sixth.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:w-[80px] desktop:h-[80px] mobile:w-[120px] mobile:h-[120px]"
+              src="./src/images/brands/eighth.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:w-[80px] desktop:h-[80px] mobile:w-[120px] mobile:h-[120px]"
+              src="./src/images/brands/tenth.png"
+              alt=""
+          /></a>
+        </div>
+        <div
+          class="flex desktop:hidden mobile:w-full mobile:flex mobile:justify-between"
+        >
+          <a href="#"
+            ><img
+              class="desktop:w-[110px] mt-2 desktop:h-[60px] mobile:w-[150px] mobile:h-[100px]"
+              src="./src/images/brands/sixth.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:w-[80px] desktop:h-[80px] mobile:w-[120px] mobile:h-[120px]"
+              src="./src/images/brands/eighth.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="desktop:w-[80px] desktop:h-[80px] mobile:w-[120px] mobile:h-[120px]"
+              src="./src/images/brands/tenth.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <!-- #endregion car brands-->
+      <!-- #region why autorent-->
+      <div
+        class="bg-[url(../images/whyautorent/carbg.jpg)] desktop:w-[85%] h-[300px] rounded-[16px] bg-cover bg-center mx-auto mobile:w-[90%] mobile:"
+      >
+        <div
+          class="desktop:w-[100%] h-[300px] bg-[#2b2b2b]/60 rounded-[16px] mobile:w-[100%]"
+        >
+          <div class="desktop:mx-auto">
+            <p
+              class="text-[#FDB713] w-fit desktop:mx-auto font-vaziri font-bold text-[27px] pt-4 mobile:mx-auto"
+            >
+              چــــــرا اُتو رِنت؟
+            </p>
+            <p
+              class="font-vaziri text-white text-[18px] desktop:mx-[150px] text-center leading-[180%] mobile:mx-auto mobile:text-center mobile:px-5 line-clamp-3"
+            >
+              اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا
+              در مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی
+              ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در
+              اختیار ندارید یا خودروی شما مطمئن نیست، می‌توانید از سوییچ، خودروی
+              مناسب خود را کرایه کرده و با آسودگی به سفر بروید.
+            </p>
+          </div>
+          <div
+            class="desktop:justify-between desktop:w-fit desktop:mx-auto gap-[10px] flex mt-5 mobile:w-fit mobile:mx-auto mobile:justify-around"
+          >
+            <nav
+              class="desktop:w-fit desktop:h-[186px] bg-white rounded-[16px] border border-[#D7D7D7] mobile:w-[100%] mobile:h-[140px]"
+            >
+              <a href="#"
+                ><img
+                  class="w-[50px] h-[50px] mx-auto my-3 border-1 border-[#08237D] rounded-[10px] p-2"
+                  src="./src/images/whyautorent/box.png"
+                  alt=""
+              /></a>
+              <a class="text-decoration-none" href="#"
+                ><p
+                  class="text-[#414141] w-fit text-decoration-none text-[16px] font-bold font-vaziri desktop:place-items-center mobile:mx-auto text-nowrap mobile:px-2"
+                  href="#"
+                >
+                  تحویل در محل
+                </p></a
+              >
+              <a class="text-decoration-none" href="#"
+                ><p
+                  class="text-[#757575] desktop:flex text-[12px] font-vaziri text-center mx-[20px] leading-[200%] mobile:hidden"
+                >
+                  تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.
+                </p></a
+              >
+            </nav>
+            <nav
+              class="desktop:w-fit desktop:h-[186px] bg-white rounded-[16px] border border-[#D7D7D7] mobile:w-[100%] mobile:h-[140px]"
+            >
+              <a href="#"
+                ><img
+                  class="w-[50px] h-[50px] mx-auto my-3 border-1 border-[#08237D] rounded-[10px] p-2"
+                  src="./src/images/whyautorent/24-support.png"
+                  alt=""
+              /></a>
+              <a class="text-decoration-none" href="#"
+                ><p
+                  class="text-[#414141] w-fit text-[16px] font-bold font-vaziri desktop:mx-auto mobile:mx-auto text-nowrap mobile:text-[14px]"
+                >
+                  پشتیبانی 24 ساعته
+                </p></a
+              >
+              <a class="text-decoration-none" href="#"
+                ><p
+                  class="text-[#757575] desktop:flex text-[12px] font-vaziri text-center mx-[20px] leading-[200%] mobile:hidden"
+                >
+                  کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.
+                </p></a
+              >
+            </nav>
+            <nav
+              class="desktop:w-fit desktop:h-[186px] bg-white rounded-[16px] border border-[#D7D7D7] mobile:w-[100%] mobile:h-[140px]"
+            >
+              <a href="#"
+                ><img
+                  class="w-[55px] h-[55px] mx-auto my-3"
+                  src="./src/images/whyautorent/icon.png"
+                  alt=""
+              /></a>
+              <a class="text-decoration-none" href="#"
+                ><p
+                  class="text-[#414141] w-fit text-[16px] font-bold font-vaziri desktop:mx-auto mobile:mx-auto text-nowrap mobile:px-2"
+                >
+                  قیمت مناسب
+                </p></a
+              >
+              <a class="text-decoration-none" href="#"
+                ><p
+                  class="text-[#757575] desktop:flex text-[12px] font-vaziri text-center mx-[20px] leading-[200%] mobile:hidden"
+                >
+                  هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.
+                </p></a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion why autorent-->
+      <!-- #region car type-->
+      <div
+        class="desktop:w-[80%] desktop:flex h-[190px] mx-auto desktop:mt-[170px] desktop:gap-2 mobile:mt-[100px] mobile:h-fit mobile:w-[85%] mobile:place-items-center"
+      >
+        <nav
+          class="bg-white rounded-[16px] border border-[#D7D7D7] desktop:h-[160px] w-[250px] leading-6 hover:!bg-[#FDB713] transition mobile:h-full mobile:w-[90%]"
+        >
+          <div class="w-fit mx-auto">
+            <a
+              class="font-vaziri desktop:text-[20px] mobile:text-[25px] text-decoration-none text-black font-bold"
+              href="#"
+              >کوپه</a
+            >
+          </div>
+          <a href="#"
+            ><img
+              class="rotate-y-180 px-1"
+              src="./src/images/cartype/koope.png"
+              alt=""
+          /></a>
+        </nav>
+        <nav
+          class="bg-white rounded-[16px] desktop:mt-0 mobile:mt-3 border border-[#D7D7D7] desktop:h-[160px] w-[250px] leading-6 hover:!bg-[#FDB713] transition mobile:h-full mobile:w-[90%]"
+        >
+          <div class="w-fit mx-auto">
+            <a
+              class="font-vaziri desktop:text-[20px] mobile:text-[25px] text-decoration-none text-black font-bold"
+              href="#"
+              >سدان</a
+            >
+          </div>
+          <a href="#"
+            ><img
+              class="rotate-y-180 px-1"
+              src="./src/images/cartype/sedan.png"
+              alt=""
+          /></a>
+        </nav>
+        <nav
+          class="bg-white rounded-[16px] desktop:mt-0 mobile:mt-3 border border-[#D7D7D7] desktop:h-[160px] w-[250px] leading-6 hover:!bg-[#FDB713] transition mobile:h-full mobile:w-[90%]"
+        >
+          <div class="w-fit mx-auto">
+            <a
+              class="font-vaziri desktop:text-[20px] mobile:text-[25px] text-decoration-none text-black font-bold"
+              href="#"
+              >کروک</a
+            >
+          </div>
+          <img
+            class="rotate-y-180 px-1"
+            src="./src/images/cartype/krook.png"
+            alt=""
+          />
+        </nav>
+        <nav
+          class="bg-white rounded-[16px] desktop:mt-0 mobile:mt-3 border border-[#D7D7D7] desktop:h-[160px] w-[250px] leading-6 hover:!bg-[#FDB713] transition mobile:h-full mobile:w-[90%]"
+        >
+          <div class="w-fit mx-auto">
+            <a
+              class="font-vaziri desktop:text-[20px] mobile:text-[25px] text-decoration-none text-black font-bold"
+              href="#"
+              >شاسی بلند</a
+            >
+          </div>
+          <img class="px-1" src="./src/images/cartype/shasiboland.png" alt="" />
+        </nav>
+        <nav
+          class="bg-white rounded-[16px] desktop:mt-0 mobile:mt-3 border border-[#D7D7D7] desktop:h-[160px] w-[250px] leading-6 hover:!bg-[#FDB713] transition mobile:h-full mobile:w-[90%]"
+        >
+          <div class="w-fit mx-auto">
+            <a
+              class="font-vaziri desktop:text-[20px] mobile:text-[25px] text-decoration-none text-black font-bold"
+              href="#"
+              >اسپرت</a
+            >
+          </div>
+          <img
+            class="rotate-y-180 px-1"
+            src="./src/images/cartype/sport.png"
+            alt=""
+          />
+        </nav>
+      </div>
+      <!-- #endregion car type-->
+      <!-- #region car inventory-->
+      <div class="block leading-13 place-items-center mt-4">
+        <nav>
+          <a
+            class="!text-[#5E5E5E] text-decoration-none font-vaziri opacity-80 text-[20px]"
+            href="#"
+            >مشاهده موجودی خودروها</a
+          >
+        </nav>
+        <nav>
+          <a
+            class="!text-[#353535] text-decoration-none font-vaziri font-bold text-[32px]"
+            href="#"
+            >رزرو خودرو در </a
+          ><a
+            class="!text-[#D79C10] text-decoration-none font-vaziri font-bold text-[32px]"
+            href="#"
+            >اُتـــورِنت</a
+          >
+        </nav>
+      </div>
+      <div class="mx-auto mt-4 flex w-fit">
+        <div class="desktop:flex mobile:w-fit mobile:mx-auto">
+          <nav
+            class="btn btn-outline-primary desktop:w-[130px] h-[50px] text-center"
+          >
+            <p class="font-vaziri text-[14px] mt-2">پرطرفدار</p>
+          </nav>
+          <nav
+            class="btn btn-outline-primary desktop:w-[130px] h-[50px] text-center"
+          >
+            <p class="font-vaziri text-[14px] mt-2">لوکس</p>
+          </nav>
+          <nav
+            class="btn btn-outline-primary desktop:w-[130px] h-[50px] text-center"
+          >
+            <p class="font-vaziri text-[14px] mt-2">اقتصادی</p>
+          </nav>
+        </div>
+        <nav class="desktop:mr-65 mobile:hidden">
+          <a
+            class="font-vaziri text-[15px] text-nowrap text-decoration-none flex gap-1 items-center mt-[10px]"
+            href="#"
+            >مشاهده همه<img
+              class="w-[15px] h-[15px]"
+              src="./src/images/carinventory/arrow-left (1).png"
+              alt=""
+          /></a>
+        </nav>
+      </div>
+      <div class="place-items-center w-[100%]">
+        <div
+          class="grid desktop:grid-cols-3 w-[85%] place-items-center desktop:grid-rows-2 gap-[30px] mobile:mx-auto mt-[30px] desktop:mx-auto desktop:w-[85%] h-fit mobile:grid-cols-1 mobile:grid-rows-6 mobile:gap-y-[30px] mobile:w-fit"
+        >
+          <div
+            class="bg-white w-[392px] h-[510px] border border-[#D7D7D7] rounded-[16px] relative"
+          >
+            <a href="#"
+              ><nav
+                class="bg-[#08237D] w-[32px] h-[29px] absolute z-50 rounded-[8px] mr-83 mt-2 font-vaziri text-[14px] text-center flex items-center justify-center text-white"
+              >
+                ٪۲۰
+              </nav>
+              <img
+                class="w-[350px] h-[225px] border border-[#F3F3F3] rounded-[12px] mx-[20px] mt-[20px]"
+                src="./src/images/carinventory/first.jpg"
+                alt=""
+            /></a>
+            <a
+              class="!text-black text-decoration-none font-bold font-vaziri mr-4 mt-2.5 text-[16px] block"
+              href="#"
+              >اجاره بنز E350 سدان</a
+            >
+            <a
+              class="!text-[#868686] text-decoration-none font-vaziri mr-4 text-[12px]"
+              href="#"
+              >مدل:</a
+            >
+            <a
+              class="!text-[#494949] text-decoration-none font-vaziri mr-0.5 text-[12px]"
+              href="#"
+              >2016</a
+            >
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >روزانه</a
+              >
+            </nav>
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >ماهانه</a
+              >
+            </nav>
+            <nav
+              class="w-[350px] h-[0.1px] bg-black/15 mx-auto mt-2.5 mb-1"
+            ></nav>
+            <nav>
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-5"
+                href="#"
+                >مبلغ ضمانت:</a
+              ><a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-52 font-bold"
+                href="#"
+                >80 میلیون تومان</a
+              >
+            </nav>
+            <nav
+              class="bg-primary w-[360px] h-[40px] rounded-[8px] mx-auto justify-center flex items-center mt-2"
+            >
+              <a
+                class="font-vaziri !text-[#FFFFFF] text-decoration-none text-[14px]"
+                href="#"
+                >درخواست رزرو</a
+              >
+            </nav>
+          </div>
+          <div
+            class="bg-white w-[392px] h-[510px] border border-[#D7D7D7] rounded-[16px]"
+          >
+            <a href="#"
+              ><img
+                class="w-[350px] h-[225px] border border-[#F3F3F3] rounded-[12px] mx-[20px] mt-[20px]"
+                src="./src/images/carinventory/second.jpg"
+                alt=""
+            /></a>
+            <a
+              class="!text-black text-decoration-none font-bold font-vaziri mr-4 mt-2.5 text-[16px] block"
+              href="#"
+              >اجاره تویوتا لندکروز در تهران 2013</a
+            >
+            <a
+              class="!text-[#868686] text-decoration-none font-vaziri mr-4 text-[12px]"
+              href="#"
+              >مدل:</a
+            >
+            <a
+              class="!text-[#494949] text-decoration-none font-vaziri mr-0.5 text-[12px]"
+              href="#"
+              >2016</a
+            >
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >روزانه</a
+              >
+            </nav>
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >ماهانه</a
+              >
+            </nav>
+            <nav
+              class="w-[350px] h-[0.1px] bg-black/15 mx-auto mt-2.5 mb-1"
+            ></nav>
+            <nav>
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-5"
+                href="#"
+                >مبلغ ضمانت:</a
+              ><a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-52 font-bold"
+                href="#"
+                >80 میلیون تومان</a
+              >
+            </nav>
+            <nav
+              class="bg-primary w-[360px] h-[40px] rounded-[8px] mx-auto justify-center flex items-center mt-2"
+            >
+              <a
+                class="font-vaziri !text-[#FFFFFF] text-decoration-none text-[14px]"
+                href="#"
+                >درخواست رزرو</a
+              >
+            </nav>
+          </div>
+          <div
+            class="bg-white w-[392px] h-[510px] border border-[#D7D7D7] rounded-[16px]"
+          >
+            <a href="#"
+              ><nav
+                class="bg-[#08237D] w-[32px] h-[29px] absolute z-50 rounded-[8px] mr-83 mt-2 font-vaziri text-[14px] text-center flex items-center justify-center text-white"
+              >
+                ٪۲۰
+              </nav>
+              <img
+                class="w-[350px] h-[225px] border border-[#F3F3F3] rounded-[12px] mx-[20px] mt-[20px]"
+                src="./src/images/carinventory/third.jpg"
+                alt=""
+            /></a>
+            <a
+              class="!text-black text-decoration-none font-bold font-vaziri mr-4 mt-2.5 text-[16px] block"
+              href="#"
+              >اجاره جنسیس کوپه</a
+            >
+            <a
+              class="!text-[#868686] text-decoration-none font-vaziri mr-4 text-[12px]"
+              href="#"
+              >مدل:</a
+            >
+            <a
+              class="!text-[#494949] text-decoration-none font-vaziri mr-0.5 text-[12px]"
+              href="#"
+              >2016</a
+            >
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >روزانه</a
+              >
+            </nav>
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >ماهانه</a
+              >
+            </nav>
+            <nav
+              class="w-[350px] h-[0.1px] bg-black/15 mx-auto mt-2.5 mb-1"
+            ></nav>
+            <nav>
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-5"
+                href="#"
+                >مبلغ ضمانت:</a
+              ><a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-52 font-bold"
+                href="#"
+                >80 میلیون تومان</a
+              >
+            </nav>
+            <nav
+              class="bg-primary w-[360px] h-[40px] rounded-[8px] mx-auto justify-center flex items-center mt-2"
+            >
+              <a
+                class="font-vaziri !text-[#FFFFFF] text-decoration-none text-[14px]"
+                href="#"
+                >درخواست رزرو</a
+              >
+            </nav>
+          </div>
+
+          <div
+            class="bg-white w-[392px] h-[510px] border border-[#D7D7D7] rounded-[16px]"
+          >
+            <a href="#"
+              ><img
+                class="w-[350px] h-[225px] border border-[#F3F3F3] rounded-[12px] mx-[20px] mt-[20px]"
+                src="./src/images/carinventory/fourth.jpg"
+                alt=""
+            /></a>
+            <a
+              class="!text-black text-decoration-none font-bold font-vaziri mr-4 mt-2.5 text-[16px] block"
+              href="#"
+              >اجاره بی ام و 528</a
+            >
+            <a
+              class="!text-[#868686] text-decoration-none font-vaziri mr-4 text-[12px]"
+              href="#"
+              >مدل:</a
+            >
+            <a
+              class="!text-[#494949] text-decoration-none font-vaziri mr-0.5 text-[12px]"
+              href="#"
+              >2016</a
+            >
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >روزانه</a
+              >
+            </nav>
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >ماهانه</a
+              >
+            </nav>
+            <nav
+              class="w-[350px] h-[0.1px] bg-black/15 mx-auto mt-2.5 mb-1"
+            ></nav>
+            <nav>
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-5"
+                href="#"
+                >مبلغ ضمانت:</a
+              ><a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-52 font-bold"
+                href="#"
+                >80 میلیون تومان</a
+              >
+            </nav>
+            <nav
+              class="bg-primary w-[360px] h-[40px] rounded-[8px] mx-auto justify-center flex items-center mt-2"
+            >
+              <a
+                class="font-vaziri !text-[#FFFFFF] text-decoration-none text-[14px]"
+                href="#"
+                >درخواست رزرو</a
+              >
+            </nav>
+          </div>
+          <div
+            class="bg-white w-[392px] h-[510px] border border-[#D7D7D7] rounded-[16px]"
+          >
+            <a href="#"
+              ><nav
+                class="bg-[#08237D] w-[32px] h-[29px] absolute z-50 rounded-[8px] mr-83 mt-2 font-vaziri text-[14px] text-center flex items-center justify-center text-white"
+              >
+                ٪۲۰
+              </nav>
+              <img
+                class="w-[350px] h-[225px] border border-[#F3F3F3] rounded-[12px] mx-[20px] mt-[20px]"
+                src="./src/images/carinventory/fifth.jpg"
+                alt=""
+            /></a>
+            <a
+              class="!text-black text-decoration-none font-bold font-vaziri mr-4 mt-2.5 text-[16px] block"
+              href="#"
+              >اجاره هیوندای توسان 2014</a
+            >
+            <a
+              class="!text-[#868686] text-decoration-none font-vaziri mr-4 text-[12px]"
+              href="#"
+              >مدل:</a
+            >
+            <a
+              class="!text-[#494949] text-decoration-none font-vaziri mr-0.5 text-[12px]"
+              href="#"
+              >2016</a
+            >
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >روزانه</a
+              >
+            </nav>
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >ماهانه</a
+              >
+            </nav>
+            <nav
+              class="w-[350px] h-[0.1px] bg-black/15 mx-auto mt-2.5 mb-1"
+            ></nav>
+            <nav>
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-5"
+                href="#"
+                >مبلغ ضمانت:</a
+              ><a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-52 font-bold"
+                href="#"
+                >80 میلیون تومان</a
+              >
+            </nav>
+            <nav
+              class="bg-primary w-[360px] h-[40px] rounded-[8px] mx-auto justify-center flex items-center mt-2"
+            >
+              <a
+                class="font-vaziri !text-[#FFFFFF] text-decoration-none text-[14px]"
+                href="#"
+                >درخواست رزرو</a
+              >
+            </nav>
+          </div>
+          <div
+            class="bg-white w-[392px] h-[510px] border border-[#D7D7D7] rounded-[16px]"
+          >
+            <a href="#"
+              ><img
+                class="w-[350px] h-[225px] border border-[#F3F3F3] rounded-[12px] mx-[20px] mt-[20px]"
+                src="./src/images/carinventory/sixth.jpg"
+                alt=""
+            /></a>
+            <a
+              class="!text-black text-decoration-none font-bold font-vaziri mr-4 mt-2.5 text-[16px] block"
+              href="#"
+              >اجاره بنز sl کروک</a
+            >
+            <a
+              class="!text-[#868686] text-decoration-none font-vaziri mr-4 text-[12px]"
+              href="#"
+              >مدل:</a
+            >
+            <a
+              class="!text-[#494949] text-decoration-none font-vaziri mr-0.5 text-[12px]"
+              href="#"
+              >2016</a
+            >
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >روزانه</a
+              >
+            </nav>
+            <nav
+              class="bg-[#F3F3F3] w-[360px] h-[44px] mx-auto mt-2 rounded-[8px] flex items-center"
+            >
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-2"
+                href="#"
+                >از ۱ تا 30 روز:</a
+              ><a
+                class="font-vaziri text-decoration-none text-[16px] mr-2"
+                href="#"
+                >8,500,000</a
+              ><a
+                class="font-vaziri !text-[#494949] text-decoration-none text-[12px] mr-43"
+                href="#"
+                >ماهانه</a
+              >
+            </nav>
+            <nav
+              class="w-[350px] h-[0.1px] bg-black/15 mx-auto mt-2.5 mb-1"
+            ></nav>
+            <nav>
+              <a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-5"
+                href="#"
+                >مبلغ ضمانت:</a
+              ><a
+                class="font-vaziri !text-[#212121] text-decoration-none text-[12px] mr-52 font-bold"
+                href="#"
+                >80 میلیون تومان</a
+              >
+            </nav>
+            <nav
+              class="bg-primary w-[360px] h-[40px] rounded-[8px] mx-auto justify-center flex items-center mt-2"
+            >
+              <a
+                class="font-vaziri !text-[#FFFFFF] text-decoration-none text-[14px]"
+                href="#"
+                >درخواست رزرو</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion car inventory-->
+      <!-- #region reservation-->
+      <div class="block leading-13 place-items-center">
+        <nav class="mt-4">
+          <a
+            class="!text-[#5E5E5E] text-decoration-none font-vaziri opacity-80 text-[20px]"
+            href="#"
+            >چگونه در وبسایت</a
+          >
+        </nav>
+        <nav>
+          <a
+            class="!text-[#D79C10] text-decoration-none font-vaziri font-bold text-[32px]"
+            href="#"
+            >اُتـــورِنت، </a
+          ><a
+            class="!text-[#353535] text-decoration-none font-vaziri font-bold text-[32px]"
+            href="#"
+          >
+            خودرو رزرو کنیم؟</a
+          >
+        </nav>
+      </div>
+      <nav class="place-items-center relative mobile:flex-col">
+        <div
+          class="relative w-[85%] desktop:mt-0 flex items-center justify-between"
+        >
+          <div class="">
+            <img
+              class="text-[152px] desktop:flex mobile:hidden"
+              src="./src/images/reservation/1.png"
+              alt=""
+            />
+            <nav class="mr-[35px]">
+              <a href="#">
+                <img
+                  class="desktop:w-[55px] desktop:h-[55px] mobile:w-fit mobile:h-fit absolute z-50 -mr-14 top-21"
+                  src="./src/images/reservation/Frame 427320959.png"
+                  alt=""
+                />
+              </a>
+              <a
+                class="!text-[#D79C10] text-decoration-none font-vaziri mobile:hidden desktop:flex font-bold text-[22px] bottom-9 mr-1 absolute"
+                href="#"
+                >خودروی</a
+              >
+              <a
+                class="text-decoration-none font-vaziri font-bold mobile:hidden desktop:flex !text-[#212121] text-[22px] bottom-9 mr-20 absolute"
+                href="#"
+                >خود را انتخاب کنید.</a
+              >
+              <a
+                class="!text-[#5E5E5E] text-decoration-none mobile:hidden desktop:flex font-vaziri text-[16px] top-20 absolute w-[258px] mr-1"
+                href="#"
+                >خودروی مورد نظر خود را، متناسب با درخواست خود انتخاب کنید.</a
+              >
+            </nav>
+          </div>
+          <div>
+            <img
+              class="text-[152px] desktop:flex mobile:hidden"
+              src="./src/images/reservation/2.png"
+              alt=""
+            />
+
+            <nav class="mr-[10px] flex flex-row-reverse">
+              <a href="#"
+                ><img
+                  class="desktop:w-[55px] desktop:h-[55px] mobile:w-fit mobile:h-fit absolute z-50 -mr-15 top-21"
+                  src="./src/images/reservation/Frame 427320961.png"
+                  alt=""
+              /></a>
+              <a
+                class="!text-[#D79C10] text-decoration-none mobile:hidden desktop:flex font-vaziri font-bold text-[22px] bottom-9 ml-60 absolute"
+                href="#"
+                >تاریخ</a
+              >
+              <a
+                class="text-decoration-none font-vaziri font-bold mobile:hidden desktop:flex !text-[#212121] text-[22px] bottom-9 ml-14 absolute"
+                href="#"
+                >تحویل را تعیین کنید.</a
+              >
+              <a
+                class="!text-[#5E5E5E] text-decoration-none mobile:hidden desktop:flex font-vaziri text-[16px] top-20 absolute w-[258px] ml-14 text-wrap"
+                href="#"
+                >تاریخ موردنظر خود را از تقویم، انتخاب و رزرو کنید.</a
+              >
+            </nav>
+          </div>
+        </div>
+
+        <div
+          class="relative w-[85%] mx-auto flex items-center mt-160 justify-between"
+        >
+          <div>
+            <img
+              class="text-[152px] desktop:flex mobile:hidden"
+              src="./src/images/reservation/3.png"
+              alt=""
+            />
+            <nav class="desktop:mr-[95px] mobile:mr-[35px]">
+              <a href="#"
+                ><img
+                  class="desktop:w-[55px] desktop:h-[55px] mobile:w-fit mobile:h-fit absolute z-50 -mr-15 top-21"
+                  src="./src/images/reservation/Frame 427320960.png"
+                  alt=""
+              /></a>
+              <a
+                class="!text-[#D79C10] text-decoration-none mobile:hidden desktop:flex font-vaziri font-bold text-[22px] bottom-9 absolute"
+                href="#"
+                >هزینه</a
+              >
+              <a
+                class="text-decoration-none font-vaziri font-bold mobile:hidden desktop:flex !text-[#212121] text-[22px] bottom-9 mr-14 absolute"
+                href="#"
+                >اجاره را پرداخت کنید.</a
+              >
+              <a
+                class="!text-[#5E5E5E] text-decoration-none mobile:hidden desktop:flex font-vaziri text-[16px] top-20 absolute w-[258px]"
+                href="#"
+                >می توانید از طریق کیف پول آنلاین یا کارت های عضو شبکه شتاب
+                هزینه اجاره را پرداخت کنید.</a
+              >
+            </nav>
+          </div>
+          <div>
+            <img
+              class="text-[152px] desktop:flex mobile:hidden"
+              src="./src/images/reservation/4.png"
+              alt=""
+            />
+            <nav class="flex flex-row-reverse">
+              <a href="#"
+                ><img
+                  class="desktop:w-[55px] desktop:h-[55px] mobile:w-fit mobile:h-fit absolute z-50 -mr-15 top-21"
+                  src="./src/images/reservation/Frame 1430103011.png"
+                  alt=""
+              /></a>
+              <a
+                class="!text-[#D79C10] text-decoration-none mobile:hidden desktop:flex font-vaziri font-bold text-[22px] bottom-9 ml-56 absolute"
+                href="#"
+                >خودرو</a
+              >
+              <a
+                class="text-decoration-none font-vaziri font-bold mobile:hidden desktop:flex !text-[#212121] text-[22px] bottom-9 ml-22 absolute"
+                href="#"
+                >را دریافت کنید.</a
+              >
+              <a
+                class="!text-[#5E5E5E] text-decoration-none font-vaziri mobile:hidden desktop:flex text-[16px] top-20 absolute w-[258px] ml-8"
+                href="#"
+                >در زمان و مکان تعیین شده، خودروی خود را دریافت کنید.</a
+              >
+            </nav>
+          </div>
+        </div>
+      </nav>
+      <div class="place-items-center">
+        <img
+          class="w-fit h-fit top-810 absolute z-20 mobile:hidden desktop:flex"
+          src="./src/images/reservation/bluecar.png"
+          alt=""
+        />
+      </div>
+      <!-- #endregion reservation-->
+      <!-- #region common questions-->
+      <div class="block leading-13 mt-66 place-items-center">
+        <nav>
+          <a
+            class="!text-[#5E5E5E] text-decoration-none font-vaziri opacity-80 text-[20px]"
+            href="#"
+            >پر تکرارترین سؤالاتی که پرسیدید</a
+          >
+        </nav>
+        <nav>
+          <a
+            class="!text-[#353535] text-decoration-none font-vaziri font-bold text-[32px]"
+            href="#"
+          >
+            سؤالات</a
+          ><a
+            class="!text-[#D79C10] text-decoration-none font-vaziri font-bold text-[32px]"
+            href="#"
+          >
+            متداول</a
+          >
+        </nav>
+      </div>
+      <div class="w-[85%] mx-auto mt-3 h-[459px] place-items-center">
+        <div class="w-[85%]">
+          <img
+            class="w-[392px] h-[459px] float-left mr-4 mobile:hidden desktop:flex"
+            src="./src/images/questions/Frame 1430102958 (1).png"
+            alt=""
+          />
+          <nav class="flex h-[76px]">
+            <a
+              class="gap-1 font-vaziri !text-[#494949] text-decoration-none text-[16px] bg-[#FFFFFF] h-[76px] w-[800px] flex items-center rounded-[16px] border border-[#D7D7D7]"
+              href="#"
+              ><img
+                class="mr-2"
+                src="./src/images/questions/add-square.png"
+                alt=""
+              />در صورت بروز نقص فنی برای خودرو چه اتفاقی می افتد؟</a
+            >
+          </nav>
+          <nav
+            class="mt-3 rounded-[16px] border border-[#D7D7D7] overflow-hidden bg-[#FFFFFF] h-[183px]"
+          >
+            <a
+              class="gap-1 font-vaziri !text-[#494949] text-decoration-none text-[16px] flex mt-4"
+              href="#"
+              ><img
+                class="mr-2 w-[24px] h-[24px]"
+                src="./src/images/questions/minus-square.png"
+                alt=""
+              />هزینه بنزین و کارواش در خودروهای اجاره ای به عهده کیست؟</a
+            >
+            <nav class="text-right w-fit mx-3">
+              <a
+                class="font-vaziri !text-[#727272] opacity-70 text-decoration-none text-[14px]"
+                href="#"
+                >در زمان اجاره خودرو بدون راننده خودروها کارواش شده و با باک
+                بنزین پر تحویل مشتریان عزیز می گردد. در زمان استرداد خودرو در
+                صورتی که خودرو به کارواش نیاز داشته و یا خودرو دارای کسر سوخت
+                باشد هزینه آن بر عهده مشتری می باشد.</a
+              >
+            </nav>
+          </nav>
+          <nav class="flex mt-3">
+            <a
+              class="gap-1 font-vaziri !text-[#494949] text-decoration-none text-[16px] bg-[#FFFFFF] h-[76px] w-[800px] flex items-center rounded-[16px] border border-[#D7D7D7]"
+              href="#"
+              ><img
+                class="mr-2"
+                src="./src/images/questions/add-square.png"
+                alt=""
+              />آیا ماشین های اتورنت دارای بیمه هستند؟</a
+            >
+          </nav>
+          <nav class="flex mt-3">
+            <a
+              class="gap-1 font-vaziri !text-[#494949] text-decoration-none text-[16px] bg-[#FFFFFF] h-[76px] w-[800px] flex items-center rounded-[16px] border border-[#D7D7D7]"
+              href="#"
+              ><img
+                class="mr-2"
+                src="./src/images/questions/add-square.png"
+                alt=""
+              />محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟</a
+            >
+          </nav>
+        </div>
+      </div>
+      <!-- #endregion common questions-->
+      <!-- #region comments-->
+      <div class="block leading-13 mt-5 place-items-center">
+        <nav>
+          <a
+            class="!text-[#5E5E5E] text-decoration-none font-vaziri opacity-80 text-[20px]"
+            href="#"
+            >آنچه مشتریان ما درموردمان گفته‌اند.</a
+          >
+        </nav>
+        <nav>
+          <a
+            class="!text-[#353535] text-decoration-none font-vaziri font-bold text-[32px]"
+            href="#"
+            >نظرات</a
+          ><a
+            class="!text-[#D79C10] text-decoration-none font-vaziri font-bold text-[32px]"
+            href="#"
+          >
+            مشتریان</a
+          >
+        </nav>
+      </div>
+      <div class="w-[85%] h-[511px] mx-auto mt-3">
+        <nav
+          class="h-[391px] bg-[#FFFFFF] border overflow-hidden border-[#D7D7D7] rounded-[16px]"
+        >
+          <a href="#"
+            ><img
+              class="mx-auto w-[136px] h-[217px] mt-3"
+              src="./src/images/comments/Frame 427321019.png"
+              alt=""
+          /></a>
+          <nav
+            class="text-center w-fit mobile:line-clamp-4 h-[107px] mx-3 mt-10"
+          >
+            <a
+              class="font-vaziri text-decoration-none !text-[#727272] opacity-[80%]"
+              href="#"
+              >اولین بار بود که برای مسافرت ماشین اجاره می‌کردم و به دنبال یک
+              شرکت با سابقه و مطمئن می‌گشتم!بدون هیچ شکی میگم، اتو رنت تو کار
+              خودش بهترینه!پشتیبانی عالی، هزینه بسیار مناسب، آسان بودن روند
+              اجاره و رزرو؛ هرچی بگم کم گفتم!حتماً دفعه بعد هم برای اجاره ماشین
+              به سراغشون میام.</a
+            >
+          </nav>
+        </nav>
+        <nav class="mt-[24px] flex gap-4">
+          <nav
+            class="desktop:flex mobile:mx-auto mobile:w-full desktop:w-[288px] h-[96px] bg-white hover:!bg-[#FDB713] transition rounded-[16px] flex items-center justify-center border border-[#D7D7D7]"
+          >
+            <a href="#"
+              ><img
+                class="rounded-[50%] w-[64px] h-[64px]"
+                src="./src/images/comments/one.jpg"
+                alt=""
+            /></a>
+            <div class="flex flex-col mr-3">
+              <div class="w-full">
+                <a
+                  class="!text-[#212121] text-decoration-none font-vaziri text-[16px]"
+                  href="#"
+                  >اولدوز بهاور</a
+                >
+              </div>
+              <div class="w-full">
+                <a
+                  class="!text-[#494949] text-decoration-none font-vaziri text-[14px]"
+                  href="#"
+                  >27 دی ماه 1380</a
+                >
+              </div>
+            </div>
+          </nav>
+          <nav
+            class="w-[288px] desktop:flex mobile:hidden h-[96px] bg-[#FFFFFF] hover:!bg-[#FDB713] transition rounded-[16px] flex items-center justify-center border border-[#D7D7D7]"
+          >
+            <a href="#"
+              ><img
+                class="rounded-[50%] w-[64px] h-[64px]"
+                src="./src/images/comments/two.jpg"
+                alt=""
+            /></a>
+            <div class="flex flex-col mr-3">
+              <div>
+                <a
+                  class="!text-[#212121] text-decoration-none font-vaziri text-[16px]"
+                  href="#"
+                  >محمدجواد امینی</a
+                >
+              </div>
+              <div>
+                <a
+                  class="!text-[#494949] text-decoration-none font-vaziri text-[14px]"
+                  href="#"
+                  >27 دی ماه 1399</a
+                >
+              </div>
+            </div>
+          </nav>
+          <nav
+            class="desktop:flex mobile:hidden w-[288px] h-[96px] bg-[#FFFFFF] hover:!bg-[#FDB713] transition rounded-[16px] flex items-center justify-center border border-[#D7D7D7]"
+          >
+            <a href="#"
+              ><img
+                class="rounded-[50%] w-[64px] h-[64px]"
+                src="./src/images/comments/three.jpg"
+                alt=""
+            /></a>
+            <div class="flex flex-col mr-3">
+              <div>
+                <a
+                  class="!text-[#212121] text-decoration-none font-vaziri text-[16px]"
+                  href="#"
+                  >فرزانه حیدری</a
+                >
+              </div>
+              <div>
+                <a
+                  class="!text-[#494949] text-decoration-none font-vaziri text-[14px]"
+                  href="#"
+                  >27 دی ماه 1380</a
+                >
+              </div>
+            </div>
+          </nav>
+          <nav
+            class="desktop:flex mobile:hidden w-[288px] h-[96px] bg-[#FFFFFF] hover:!bg-[#FDB713] transition rounded-[16px] flex items-center justify-center border border-[#D7D7D7]"
+          >
+            <a href="#"
+              ><img
+                class="rounded-[50%] w-[64px] h-[64px]"
+                src="./src/images/comments/four.jpg"
+                alt=""
+            /></a>
+            <div class="flex flex-col mr-3">
+              <div>
+                <a
+                  class="!text-[#212121] text-decoration-none font-vaziri text-[16px]"
+                  href="#"
+                  >فاطمه ابراهیمی‌فر</a
+                >
+              </div>
+              <div>
+                <a
+                  class="!text-[#494949] text-decoration-none font-vaziri text-[14px]"
+                  href="#"
+                  >27 دی ماه 1380</a
+                >
+              </div>
+            </div>
+          </nav>
+        </nav>
+      </div>
+      <!-- #endregion comments-->
+      <!-- #region essay-->
+      <div class="block leading-13 mt-5 place-items-center">
+        <nav>
+          <a
+            class="!text-[#5E5E5E] text-decoration-none font-vaziri opacity-80 text-[20px]"
+            href="#"
+            >مقالات ما</a
+          >
+        </nav>
+        <nav class="flex mx-auto">
+          <a
+            class="!text-[#353535] text-decoration-none font-vaziri font-bold text-[32px]"
+            href="#"
+            >مجله</a
+          ><a
+            class="!text-[#D79C10] text-decoration-none font-vaziri font-bold text-[32px]"
+            href="#"
+          >
+            خودرو</a
+          >
+          <a
+            class="font-vaziri text-decoration-none flex items-center mr-110 mobile:hidden"
+            href="#"
+            >مشاهده همه<img
+              class="w-[20px] h-[20px]"
+              src="./src/images/essay/arrow-left (2).png"
+              alt=""
+          /></a>
+        </nav>
+      </div>
+      <div
+        class="gap-[24px] desktop:flex mt-3 w-[85%] mobile:place-items-center mx-auto"
+      >
+        <nav
+          class="desktop:w-[391px] h-fit mobile:w-[85%] bg-[#FFFFFF] border border-[#D7D7D7] rounded-[16px]"
+        >
+          <div class="w-[90%] mx-auto">
+            <a href="#"
+              ><img
+                class="object-contain rounded-[12px] mobile:mx-auto mt-[16px]"
+                src="./src/images/essay/lexus.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="mt-2">
+            <a
+              class="text-decoration-none !text-[#414141] font-vaziri mr-4 text-[16px]"
+              href="#"
+              >روش های مختلف برای اجاره خودرو</a
+            >
+          </div>
+          <div class="mt-3 pr-3">
+            <a
+              class="text-decoration-none !text-[#757575] font-vaziri text-[12px]"
+              href="#"
+              > امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+              وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی
+              شده است.</a
+            >
+          </div>
+          <div class="mt-3 pr-3">
+            <a href="#"><img src="./src/images/essay/content.png" alt="" /></a>
+          </div>
+        </nav>
+        <nav
+          class="desktop:w-[391px] mobile:mt-2 desktop:mt-0 h-fit mobile:w-[85%] bg-[#FFFFFF] border border-[#D7D7D7] rounded-[16px]"
+        >
+          <div class="w-[90%] mx-auto">
+            <a href="#"
+              ><img
+                class="rounded-[12px] object-contain mx-auto mt-[16px]"
+                src="./src/images/essay/chevrolate.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="mt-2">
+            <a
+              class="text-decoration-none !text-[#414141] font-vaziri mr-4 text-[16px]"
+              href="#"
+              >روش های مختلف برای اجاره خودرو</a
+            >
+          </div>
+          <div class="mt-3 pr-3">
+            <a
+              class="text-decoration-none !text-[#757575] font-vaziri text-[12px]"
+              href="#"
+              > امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+              وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی
+              شده است.</a
+            >
+          </div>
+          <div class="mt-3 pr-3">
+            <a href="#"><img src="./src/images/essay/content.png" alt="" /></a>
+          </div>
+        </nav>
+        <nav
+          class="desktop:w-[391px] h-fit mobile:w-[85%] bg-[#FFFFFF] border border-[#D7D7D7] rounded-[16px]"
+        >
+          <div class="w-[95%] mx-auto">
+            <a href="#"
+              ><img
+                class="rounded-[12px] object-contain mx-auto mt-[16px]"
+                src="./src/images/essay/jeep.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="mt-2">
+            <a
+              class="text-decoration-none !text-[#414141] font-vaziri mr-4 text-[16px]"
+              href="#"
+              >روش های مختلف برای اجاره خودرو</a
+            >
+          </div>
+          <div class="mt-3 pr-3">
+            <a
+              class="text-decoration-none !text-[#757575] font-vaziri text-[12px]"
+              href="#"
+              > امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+              وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی
+              شده است.</a
+            >
+          </div>
+          <div class="mt-3 pr-3">
+            <a href="#"><img src="./src/images/essay/content.png" alt="" /></a>
+          </div>
+        </nav>
+      </div>
+      <!-- #endregion essay-->
+      <!-- #region footer-->
+      <div
+        class="w-[85%] h-full mx-auto bg-[#1E1E1EE5]/90 mt-[80px] rounded-[16px] p-5"
+      >
+        <nav
+          class="desktop:w-[95%] desktop:h-[100px] mobile:h-fit mobile:w-[90%] border g border-[#868686] rounded-[16px] mx-auto flex items-center"
+        >
+          <div class="mx-auto desktop:flex gap-3">
+            <nav class="flex w-[90%] mx-auto">
+              <a href="#"
+                ><img
+                  class="mt-2"
+                  src="./src/images/footer/icon (1).png"
+                  alt=""
+              /></a>
+              <div class="flex flex-col text-center gap-y-3">
+                <div>
+                  <a
+                    class="font-vaziri text-decoration-none !text-[#FFFBFB] text-[16px] mr-7"
+                    href="#"
+                    >ارتباط با ما</a
+                  >
+                </div>
+                <div class="">
+                  <a
+                    class="font-vaziri text-decoration-none !text-[#FFFBFB] text-[16px] mr-7"
+                    href="#"
+                    >0912-21326545</a
+                  >
+                </div>
+              </div>
+            </nav>
+            <nav class="bg-[#868686] w-[1px] h-[32px] mx-4 my-3"></nav>
+            <nav class="flex w-[90%] mx-auto">
+              <a href="#"
+                ><img
+                  class="mt-2"
+                  src="./src/images/footer/icon (2).png"
+                  alt=""
+              /></a>
+              <div class="flex flex-col text-center gap-y-3">
+                <div class="w-fit mx-auto">
+                  <a
+                    class="font-vaziri text-decoration-none !text-[#FFFBFB] text-[16px] mr-7"
+                    href="#"
+                    >ایمیل</a
+                  >
+                </div>
+                <div class="w-fit mx-auto mt-3">
+                  <a
+                    class="font-vaziri text-decoration-none !text-[#FFFBFB] text-[13px]"
+                    href="#"
+                    >autorent@info.com</a
+                  >
+                </div>
+              </div>
+            </nav>
+            <nav class="bg-[#868686] w-[1px] h-[32px] mx-4 my-3"></nav>
+            <nav class="flex w-[90%] mx-auto">
+              <a href="#"
+                ><img
+                  class="mt-2"
+                  src="./src/images/footer/icon (3).png"
+                  alt=""
+              /></a>
+              <div class="flex flex-col text-center gap-y-3">
+                <div>
+                  <a
+                    class="font-vaziri text-decoration-none !text-[#FFFBFB] text-[16px]"
+                    href="#"
+                    >آدرس</a
+                  >
+                </div>
+                <div>
+                  <a
+                    class="font-vaziri text-decoration-none !text-[#FFFBFB] text-[16px] mr-7"
+                    href="#"
+                    >تهران- خ شادمان</a
+                  >
+                </div>
+              </div>
+            </nav>
+          </div>
+        </nav>
+        <div class="desktop:w-[95%] mobile:w-[90%] h-fit mx-auto flex">
+          <div class="mx-auto desktop:w-[90%] mobile:w-[80%] desktop:flex">
+            <nav class="mt-3 mx-auto">
+              <div>
+                <a href="#"
+                  ><img
+                    class="w-[151.283203125px] h-[58.9998664855957px]"
+                    src="./src/images/footer/Logo (1).png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="w-fit mobile:w-[85%] text-wrap mt-4">
+                <a
+                  class="font-vaziri text-decoration-none !text-[#FFFFFF] text-[14px]"
+                  href="#"
+                  >اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
+                  ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
+                  تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.</a
+                >
+              </div>
+            </nav>
+            <nav
+              class="mt-3 text-nowrap desktop:mx-10 mobile:mt-2 desktop:mt-0 leading-10"
+            >
+              <div>
+                <a
+                  class="font-vaziri text-decoration-none !text-[#FFFFFF] text-[14px]"
+                  href="#"
+                  >دسترسی آسان</a
+                >
+              </div>
+              <div>
+                <a
+                  class="font-vaziri text-decoration-none !text-[#FFFFFF] text-[14px]"
+                  href="#"
+                  >سوالات متداول</a
+                >
+              </div>
+              <div>
+                <a
+                  class="font-vaziri text-decoration-none !text-[#FFFFFF] text-[14px]"
+                  href="#"
+                  >تماس با ما</a
+                >
+              </div>
+              <div>
+                <a
+                  class="font-vaziri text-decoration-none !text-[#FFFFFF] text-[14px]"
+                  href="#"
+                  >درباره ما</a
+                >
+              </div>
+            </nav>
+            <nav class="mt-17 mx-auto w-[90%]">
+              <div class="w-[100%] gap-3 mx-auto">
+                <div class="flex">
+                  <a
+                    class="font-vaziri text-decoration-none !text-[#FFFFFF] text-[16px]"
+                    href="#"
+                    >خبرنامه</a
+                  >
+                </div>
+
+                <div
+                  dir="rtl"
+                  class="desktop:w-[100%] mt-3 desktop:h-full mobile:h-full !text-wrap mobile:w-full border border-[#868686] rounded-[8px] flex items-center p-2"
+                >
+                  <div class="w-[100%]">
+                    <form
+                      class="flex mobile:w-full desktop:w-full mobile:flex-wrap gap-3 justify-between"
+                    >
+                      <input
+                        type="email"
+                        aria-label="جستجو"
+                        placeholder="ایمیل خود را وارد کنید"
+                        class="flex-1 bg-transparent border-none text-[#ffffff] font-vaziri text-sm placeholder:text-gray-100 focus:outline-none"
+                      />
+                      <nav
+                        class="bg-yellow-400 text-gray-900 font-vaziri flex items-center text-sm h-8 px-4 rounded-md hover:bg-yellow-500 active:bg-yellow-600 transition duration-200"
+                      >
+                        ارسال
+                      </nav>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <nav class="bg-[#898989] w-[95%] mx-auto h-[1px] mt-3"></nav>
+        <nav class="place-items-center mt-4">
+          <img src="./src/images/footer/content (1).png" alt="" />
+        </nav>
+      </div>
+      <!-- #endregion footer-->
+    </div>
+    <!-- #endregion start-->
+  </body>
+</html>
